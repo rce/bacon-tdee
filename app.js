@@ -29,7 +29,7 @@ function isNumeric(x) {
 
 function value(e) {
 	return $(e)
-		.asEventStream("keyup change")
+		.asEventStream("input")
 		.map(".target.value")
 		.toProperty($(e).val());
 };
